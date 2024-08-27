@@ -5,7 +5,7 @@ int main(){
     int n,k;
     cin>>n>>k;
     n=n&(~(1<<k));
-    cout<<"bit is unset"<<n;
+    cout<<"bit is unset: "<<n;
 
     return 0;   
 }

@@ -34,11 +34,10 @@ int countPrimes(int L, int R)
 
     for (int p : primes)
     {
-        int start = max(p * p, (L + p - 1) / p * p);
-        for (int j = start; j <= R; j += p)
-        {
-            segment[j - L] = false;
-        }
+       int start = max(p * p, (L + p - 1) / p * p);
+            for (int j = start; j <= R; j += p) {
+                segment[j - L] = false;
+            }
     }
 
     for (int i = 0; i < segment.size(); i++)
@@ -51,6 +50,8 @@ int countPrimes(int L, int R)
 }
 int main()
 {
-
+    int l,r;
+    cin>>l>>r;
+    cout<<countPrimes(l,r);
     return 0;
 }

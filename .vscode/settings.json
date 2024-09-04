@@ -3,6 +3,6 @@
         "iostream": "cpp"
     },
     "code-runner.clearPreviousOutput": true,
-    "code-runner.runInTerminal": true,
+    "code-runner.runInTerminal": false,
     "code-runner.saveAllFilesBeforeRun": true
 }

@@ -30,6 +30,7 @@ int countPrimes(int L, int R)
         L = 2;
 
     vector<int> primes = sieve(sqrt(R));
+    for(int i:primes) cout<<i<<" ";
     vector<bool> segment(R - L + 1, true);
 
     for (int p : primes)
